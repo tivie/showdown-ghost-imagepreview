@@ -1,4 +1,10 @@
 {
   "name": "showdown-ghost-imagepreview",
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "main": "./src/ghostimagepreview.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tivie/showdown-ghost-imagepreview.git",
+    "web": "https://github.com/tivie/showdown-ghost-imagepreview"
+  },
 }
