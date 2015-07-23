@@ -1,0 +1,23 @@
+{
+  "name": "showdown-ghost-imagepreview",
+  "homepage": "https://github.com/tivie/showdown-ghost-imagepreview",
+  "main": "src/imagepreview.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "showdown",
+    "ghost",
+    "imagepreview"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
