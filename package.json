@@ -1,6 +1,6 @@
 {
   "name": "showdown-ghost-imagepreview",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./src/ghostimagepreview.js",
   "repository": {
     "type": "git",
