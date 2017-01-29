@@ -1,7 +1,7 @@
 {
   "name": "showdown-ghost-imagepreview",
   "homepage": "https://github.com/tivie/showdown-ghost-imagepreview",
-  "main": "src/ghostimagepreview.js",
+  "main": "src/ghost-image-preview.js",
   "moduleType": [
     "amd",
     "globals",
