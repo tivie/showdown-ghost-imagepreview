@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/tivie/showdown-ghost-imagepreview.git",
     "web": "https://github.com/tivie/showdown-ghost-imagepreview"
-  }
+  },
   "devDependencies": {
     "chai": "^3.2.0",
     "grunt": "^0.4.5",
