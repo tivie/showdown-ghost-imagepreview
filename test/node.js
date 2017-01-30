@@ -120,6 +120,6 @@
       testCase.expected = new RegExp(testCase.expected);
 
       testCase.actual.should.match(testCase.expected);
-    }
+    };
   }
 })();
