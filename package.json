@@ -19,10 +19,10 @@
     "web": "https://github.com/tivie/showdown-ghost-imagepreview"
   },
   "devDependencies": {
-    "chai": "^3.2.0",
+    "chai": "^3.5.0",
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.11.2",
     "grunt-simple-mocha": "^0.4.0",
-    "showdown": "^1.6.2"
+    "showdown": "showdownjs/showdown#develop"
   }
 }

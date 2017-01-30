@@ -13,7 +13,10 @@
           .map(map('test/cases/')),
       issues = fs.readdirSync('test/issues/')
           .filter(filter())
-          .map(map('test/issues/'));
+          .map(map('test/issues/')),
+      regex = fs.readdirSync('test/regex/')
+        .filter(filter())
+        .map(map('test/regex/', '.rgx'));
 
   var converter = new showdown.Converter({
     extensions: [imagepreview],
@@ -49,6 +52,12 @@
     }
   });
 
+  describe('Ghost Extra Extension regex testcases', function () {
+    for (var i = 0; i < regex.length; ++i) {
+      it(regex[i].name, regexAssertion(regex[i]));
+    }
+  });
+
   /////////////////////////////////////////////////////////////////////////////
   // Test cases
   //
@@ -59,10 +68,11 @@
     };
   }
 
-  function map(dir) {
+  function map(dir, ext) {
     return function (file) {
+      ext = ext || '.html';
       var name = file.replace('.md', ''),
-          htmlPath = dir + name + '.html',
+          htmlPath = dir + name + ext,
           html = fs.readFileSync(htmlPath, 'utf8'),
           mdPath = dir + name + '.md',
           md = fs.readFileSync(mdPath, 'utf8');
@@ -101,5 +111,15 @@
       // Compare
       testCase.actual.should.equal(testCase.expected);
     };
+  }
+
+  function regexAssertion(testCase) {
+    return function () {
+      testCase.actual = converter.makeHtml(testCase.input);
+      testCase.expected = testCase.expected.trim().replace(/^\//, '').replace(/\/$/, '');
+      testCase.expected = new RegExp(testCase.expected);
+
+      testCase.actual.should.match(testCase.expected);
+    }
   }
 })();
