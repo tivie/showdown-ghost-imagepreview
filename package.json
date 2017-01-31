@@ -12,7 +12,7 @@
   ],
   "license": "MIT",
   "author": "Estevão Soares dos Santos",
-  "main": "./dist/ghost-image-preview.js",
+  "main": "./dist/showdown-ghost-imagepreview.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/tivie/showdown-ghost-imagepreview.git",
