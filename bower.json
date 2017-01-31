@@ -1,7 +1,9 @@
 {
   "name": "showdown-ghost-imagepreview",
+  "description": "Showdown Ghost image preview",
+  "authors": ["Estevao Soares dos Santos <estevao.santos@gmail.com>"],
   "homepage": "https://github.com/tivie/showdown-ghost-imagepreview",
-  "main": "src/ghost-image-preview.js",
+  "main": "dist/ghost-image-preview.js",
   "moduleType": [
     "amd",
     "globals",

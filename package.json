@@ -1,6 +1,6 @@
 {
   "name": "showdown-ghost-imagepreview",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Showdown Ghost image preview",
   "keywords": [
     "markdown",
@@ -12,16 +12,18 @@
   ],
   "license": "MIT",
   "author": "Estevão Soares dos Santos",
-  "main": "./src/ghost-image-preview.js",
+  "main": "./dist/ghost-image-preview.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/tivie/showdown-ghost-imagepreview.git",
     "web": "https://github.com/tivie/showdown-ghost-imagepreview"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
+    "chai": "^3.2.0",
     "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^1.0.0",
     "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-uglify": "^2.0.0",
     "grunt-simple-mocha": "^0.4.0",
     "showdown": "showdownjs/showdown#develop"
   }
